@@ -1,0 +1,11 @@
+.root{
+    -fx-background-color:Black;
+}
+#La1{
+    -fx-font-size:65;
+    -fx-alignment:center;
+}
+#La2{
+    -fx-font-size:20;
+    -fx-alignment:center;
+}

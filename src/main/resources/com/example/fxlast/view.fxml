@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="UP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlast.Controller">
+   <children>
+      <Label fx:id="La1" layoutX="2.0" layoutY="14.0" prefHeight="17.0" prefWidth="600.0" text="Scene 1" />
+      <Label fx:id="La2" layoutX="14.0" layoutY="109.0" prefHeight="17.0" prefWidth="600.0" text="Hello FX" />
+      <Button layoutX="251.0" layoutY="298.0" mnemonicParsing="false" onAction="#toScene2" text="to Scene 2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="TF1" layoutX="226.0" layoutY="175.0" />
+      <Label layoutX="185.0" layoutY="179.0" prefHeight="17.0" prefWidth="35.0" text="name" />
+   </children>
+</AnchorPane>
