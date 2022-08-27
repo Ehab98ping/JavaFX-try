@@ -6,7 +6,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,6 +22,9 @@ public class Controler2 {
     private Parent root;
     @FXML
     private Label welcomeLA;
+
+    @FXML
+    private AnchorPane scene2;
     //@FXML
     //protected void Click() {welcomeText.setText("Welcome");
 
@@ -31,5 +38,14 @@ public class Controler2 {
     }
     public void displayLA(String s){
         welcomeLA.setText("hello "+s);
+    }
+    public void exit(ActionEvent event){
+        Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Exit");
+        alert.setContentText("Are you sure you will exit ?");
+        if(alert.showAndWait().get()== ButtonType.OK) {
+            stage = (Stage) scene2.getScene().getWindow();
+            stage.close();
+        }
     }
 }
