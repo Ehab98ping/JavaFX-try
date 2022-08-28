@@ -7,6 +7,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,6 +19,11 @@ public class Controller {
     private Parent root;
     @FXML
     private TextField TF1;
+
+    @FXML
+    ImageView imgView1;
+    Image img1=new Image("img1.jpg");
+    Image img2=new Image("img2.jpg");
     //@FXML
     //protected void Click() {welcomeText.setText("Welcome");
 
@@ -32,6 +39,12 @@ public class Controller {
         scene=new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+    public void switchImage1(){
+        imgView1.setImage(img1);
+    }
+    public void switchImage2(){
+        imgView1.setImage(img2);
     }
 
 
